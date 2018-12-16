@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/timg"
+    tools:context="com.example.okay.shiyan.SecondActivity">
+
+    <ImageView android:id="@+id/iv_sxc"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/toux"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView android:id="@+id/userName"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/iv_sxc"
+        android:layout_marginLeft="40dp"
+        android:textSize="24dp"
+        android:text="用户名:"/>
+    <EditText android:id="@+id/red1"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/iv_sxc"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/userName"
+        android:layout_alignTop="@id/userName"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="textPersonName"/>
+    <TextView
+        android:id="@+id/password"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/red1"
+        android:textSize="24dp"
+        android:text="密 码:"
+        android:paddingLeft="40dp"/>
+    <EditText
+        android:id="@+id/red2"
+        android:layout_height="40dp
+        " android:layout_width="match_parent"
+        android:layout_below="@id/userName"
+        android:textSize="24sp"
+        android:layout_toRightOf="@id/password"
+        android:background="@null"
+        android:singleLine="true"
+        android:inputType="textPassword"/>
+
+    <TextView
+            android:id="@+id/repasswd"
+            android:layout_width="125sp"
+            android:layout_height="50sp"
+            android:text="确认密码:"
+            android:textSize="25sp"
+            android:gravity="center"
+        android:layout_below="@+id/password"/>
+
+    <EditText
+            android:id="@+id/red3"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:textSize="25sp"
+        android:layout_toRightOf="@id/repasswd"
+        android:background="@null"
+        android:layout_alignTop="@id/repasswd"
+        android:layout_below="@+id/red2"
+
+            />
+
+    <TextView android:id="@+id/sex"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:textSize="24dp"
+        android:text="性 别："
+        android:layout_alignTop="@+id/rg_sex"
+        android:layout_below="@+id/repasswd"
+        android:layout_toLeftOf="@+id/red3"
+
+         />
+    <RadioGroup android:id="@+id/rg_sex"
+        android:layout_height="40dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/red3"
+        android:layout_toRightOf="@id/sex"
+        android:orientation="horizontal">
+        <RadioButton android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="男"/>
+        <RadioButton android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="女"/>
+    </RadioGroup>
+
+    <Button android:id="@+id/bt3"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sex"
+        android:layout_marginLeft="40dp"
+        android:textSize="24dp"
+        android:text="注册"
+        android:background="@drawable/selet_state"
+        android:layout_marginRight="40dp"
+        android:textColor="#cc6699"/>
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:background="@drawable/selet_state"
+        android:layout_below="@+id/bt3"
+        android:layout_alignLeft="@+id/bt3"
+        android:layout_alignStart="@+id/bt3"
+        android:layout_marginTop="24dp"
+        android:layout_alignRight="@+id/bt3"
+        android:layout_alignEnd="@+id/bt3" />
+
+</RelativeLayout>
